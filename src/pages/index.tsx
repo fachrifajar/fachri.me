@@ -4,12 +4,8 @@ import { NextSeo } from 'next-seo';
 
 import { Container } from '../components/Container';
 import { PageTitle } from '../components/PageTitle';
-import { Photos } from '../components/Photos';
-import { Resume } from '../components/Resume';
 import { SocialLink } from '../components/SocialLink';
-import { NotePreview } from '../components/notes/NotePreview';
 import { About, Name, SocialMedia } from '../data/lifeApi';
-// import { Note, notesApi } from '../lib/notesApi';
 
 const seoTitle = 'Fachri Fajar';
 const seoDescription =
@@ -50,19 +46,6 @@ export default function Home({ latestNotes }: Props) {
           </div>
         </div>
       </Container>
-      {/* <Photos /> */}
-      {/* <Container className="mt-12">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {latestNotes.map((blogPost) => (
-              <NotePreview key={blogPost.slug} note={blogPost} dense />
-            ))}
-          </div>
-          <div className="lg:ml-auto space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
-          </div>
-        </div>
-      </Container> */}
     </>
   );
 }
