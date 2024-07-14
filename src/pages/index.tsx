@@ -12,11 +12,7 @@ const seoTitle = 'Fachri Fajar';
 const seoDescription =
   'A passionate software engineer';
 
-// type Props = {
-//   latestNotes: Note[];
-// };
-
-export default function Home({ latestNotes }: Props) {
+export default function Home() {
   return (
     <>
       <NextSeo
