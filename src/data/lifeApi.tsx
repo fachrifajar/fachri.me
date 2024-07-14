@@ -14,9 +14,7 @@ export const About = (
     <ExternalLink href="mailto:fachri.fajar@gmail.com">send me an email.</ExternalLink>
   </>
 );
-// export const AboutExtended = `I live in Wrocław, Poland, having grown up in the small town of Góra in the western part of the country. I have a bachelor's degree in Control Systems Engineering and Robotics from the Wrocław University of Technology. I like programming, books, plants, mountain biking, whisky, and traveling the world with my wife, Kasia. The cosmos fascinates me, and I take great delight in gazing at the stars.`;
 export const AboutExtended = `I live in Indonesia and hold a bachelor's degree in Petroleum Engineering from Universitas Pembangunan Nasional Yogyakarta. Although my background is in petroleum engineering, I made a significant career switch to become a software developer. This transition was driven by my passion for technology and the dynamic nature of the tech industry`;
-// I was captivated by the endless possibilities of software development, from solving complex problems to creating innovative solutions that impact millions of lives. This passion led me to pursue opportunities in the tech sector, where I started as a QA at Anteraja and currently work as a frontend developer at Waizly. This journey has been both challenging and rewarding, allowing me to leverage my analytical skills from engineering and apply them to the ever-evolving world of software development.
 
 export type Project = {
   title: string;
@@ -74,6 +72,23 @@ export const MyPastProjects: Project[] = [
 export const SocialMedia = [
   { name: 'Github', link: 'https://github.com/fachrifajar', icon: GitHubIcon },
   { name: 'LinkedIn', link: 'https://www.linkedin.com/in/fachri-fajar', icon: LinkedInIcon },
+] as const;
+
+export const Work = [
+  {
+    company: 'Waizly',
+    title: 'Frontend Developer',
+    // logo: ParabolLogo,
+    start: '2023',
+    end: 'Present',
+  },
+  {
+    company: 'Anteraja',
+    title: 'QA Analyst',
+    // logo: ClevertechLogo,
+    start: '2021',
+    end: '2023',
+  },
 ] as const;
 
 

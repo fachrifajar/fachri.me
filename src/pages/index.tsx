@@ -5,11 +5,12 @@ import { NextSeo } from 'next-seo';
 import { Container } from '../components/Container';
 import { PageTitle } from '../components/PageTitle';
 import { SocialLink } from '../components/SocialLink';
+import { Resume } from '../components/Resume';
 import { About, Name, SocialMedia } from '../data/lifeApi';
 
 const seoTitle = 'Fachri Fajar';
 const seoDescription =
-  'A passionate software engineer with an eye for details based in Wrocław, Poland.';
+  'A passionate software engineer';
 
 // type Props = {
 //   latestNotes: Note[];
@@ -46,17 +47,14 @@ export default function Home({ latestNotes }: Props) {
           </div>
         </div>
       </Container>
+
+      <Container className="mt-12">
+        <div className='flex'>
+          <Resume />
+        </div>
+      </Container>
     </>
   );
 }
 
-// const NEWEST_POSTS_TO_DISPLAY = 5;
 
-// export const getStaticProps: GetStaticProps<Props> = async () => {
-//   const latestNotes = await notesApi.getNotes('desc', NEWEST_POSTS_TO_DISPLAY);
-
-//   return {
-//     props: { latestNotes },
-//     revalidate: 10,
-//   };
-// };
