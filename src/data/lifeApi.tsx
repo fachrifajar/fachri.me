@@ -39,6 +39,16 @@ export const MyCurrentProjects: Project[] = [
     },
   },
   {
+    title: 'Github Repo Explorer',
+    techStack: ["Frontend Developer", 'Typescript', 'Next'],
+    description: 'Repo explorer for Github',
+    logo: SidLogo,
+    link: {
+      label: 'github.repo.explorer',
+      href: 'https://github-repo-explorer-alpha.vercel.app/',
+    },
+  },
+  {
     title: 'Fachri.me',
     techStack: ['Side Project', 'Next.js',],
     description: 'My personal website you are currently on, built with Next.js.',
