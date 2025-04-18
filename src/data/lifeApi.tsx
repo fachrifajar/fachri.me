@@ -30,7 +30,7 @@ export type Project = {
 export const MyCurrentProjects: Project[] = [
   {
     title: 'SID',
-    techStack: ["Frontend Developer", 'Javascript', 'React'],
+    techStack: ["Frontend Developer", 'Typescript', 'React'],
     description: 'One stop solution ads manager for Facebook, Tiktok, Google',
     logo: SidLogo,
     link: {
